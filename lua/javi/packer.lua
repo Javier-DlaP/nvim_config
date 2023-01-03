@@ -4,14 +4,7 @@ return require('packer').startup(function(use)
 
 	use 'wbthomason/packer.nvim'
 
-	use({
-	  'projekt0n/github-nvim-theme',
-	  config = function()
-	    require('github-theme').setup({
-	      -- ...
-	    })
-	  end
-	})
+	use 'folke/tokyonight.nvim'
 
 	use {
 	  'VonHeikemen/lsp-zero.nvim',
