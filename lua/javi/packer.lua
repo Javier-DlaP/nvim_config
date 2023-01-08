@@ -39,7 +39,6 @@ return require('packer').startup(function(use)
 	  }
 	}
 
-	-- install without yarn or npm
 	use({
 	    "iamcco/markdown-preview.nvim",
 	    run = function() vim.fn["mkdp#util#install"]() end,
@@ -67,6 +66,9 @@ return require('packer').startup(function(use)
 
 	use 'lewis6991/gitsigns.nvim'
 
+	use 'github/copilot.vim'
+
+	-- Must be always at the end of all plugins
 	if packer_bootstrap then
 		require('packer').sync()
 	end
