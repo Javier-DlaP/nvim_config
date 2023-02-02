@@ -68,6 +68,8 @@ return require('packer').startup(function(use)
 
 	use 'github/copilot.vim'
 
+	use 'mechatroner/rainbow_csv'
+
 	-- Must be always at the end of all plugins
 	if packer_bootstrap then
 		require('packer').sync()
