@@ -13,6 +13,9 @@ require("nvim-tree").setup({
     group_empty = true,
   },
   filters = {
-    dotfiles = false,
+    dotfiles = true,
   },
 })
+
+vim.api.nvim_set_keymap("n", "<C-c>", ":NvimTreeClose<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<C-f>", ":NvimTreeFocus<CR>", { noremap = true, silent = true })

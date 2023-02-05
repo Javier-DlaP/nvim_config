@@ -5,8 +5,8 @@ lsp.preset('recommended')
 lsp.ensure_installed({
 	'jedi_language_server',
 	'sumneko_lua',
-	'grammarly',
-	'dockerls',
+	--'grammarly',
+	--'dockerls',
 })
 
 -- Configure lua languaje server for neovim
