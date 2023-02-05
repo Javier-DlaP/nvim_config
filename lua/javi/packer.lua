@@ -70,6 +70,8 @@ return require('packer').startup(function(use)
 
 	use 'mechatroner/rainbow_csv'
 
+	use 'akinsho/toggleterm.nvim'
+
 	-- Must be always at the end of all plugins
 	if packer_bootstrap then
 		require('packer').sync()

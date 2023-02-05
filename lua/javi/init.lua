@@ -18,3 +18,7 @@ vim.g.loaded_netrwPlugin = 1
 
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
+
+-- change the way to go from terminal to normal mode
+-- Terminal mode -> Normal mode (Esc)
+vim.cmd('tnoremap <Esc> <C-\\><C-n>')
