@@ -72,6 +72,8 @@ return require('packer').startup(function(use)
 
 	use 'akinsho/toggleterm.nvim'
 
+	use 'david-kunz/gen.nvim'
+
 	-- Must be always at the end of all plugins
 	if packer_bootstrap then
 		require('packer').sync()
