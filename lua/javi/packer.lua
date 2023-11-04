@@ -74,6 +74,11 @@ return require('packer').startup(function(use)
 
 	use 'david-kunz/gen.nvim'
 
+	use {
+	  	'nvim-telescope/telescope.nvim', tag = '0.1.4',
+	  	requires = { {'nvim-lua/plenary.nvim'} }
+	}
+
 	-- Must be always at the end of all plugins
 	if packer_bootstrap then
 		require('packer').sync()
