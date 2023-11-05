@@ -66,6 +66,8 @@ return require('packer').startup(function(use)
 
 	use 'lewis6991/gitsigns.nvim'
 
+	use 'tpope/vim-fugitive'
+
 	use 'github/copilot.vim'
 
 	use 'mechatroner/rainbow_csv'
