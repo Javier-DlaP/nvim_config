@@ -81,6 +81,39 @@ return require('packer').startup(function(use)
 	  	requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
+	use({
+	  "epwalsh/obsidian.nvim",
+	  tag = "*",
+	  requires = {
+	    "nvim-lua/plenary.nvim",
+	  },
+	  config = function()
+	    require("obsidian").setup({
+	      workspaces = {
+	        {
+	          name = "personal",
+	          path = "~/obsidian-vaults/personal",
+	        },
+	        {
+	          name = "work",
+	          path = "~/obsidian-vaults/work",
+	        },
+	      },
+	    })
+	  end,
+	})
+
+	use({
+	  "epwalsh/pomo.nvim",
+	  tag = "*",
+	  requires = {
+	    "rcarriga/nvim-notify",
+	  },
+	  config = function()
+	    require("pomo").setup({ })
+	  end,
+	})
+
 	-- Must be always at the end of all plugins
 	if packer_bootstrap then
 		require('packer').sync()
